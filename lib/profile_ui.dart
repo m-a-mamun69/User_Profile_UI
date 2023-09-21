@@ -12,7 +12,7 @@ class ProfileUI extends StatelessWidget {
           children: <Widget> [
             Image(
               width: double.infinity,
-                height: MediaQuery.of(context).size.height/3,
+                height: MediaQuery.of(context).size.height/5,
                 fit: BoxFit.cover,
                 image: const NetworkImage('https://images.photowall.com/products/58832/blue-mountain-view.jpg?h=699&q=85')),
             const Positioned(
@@ -27,7 +27,7 @@ class ProfileUI extends StatelessWidget {
         const SizedBox(height: 50,),
         const ListTile(
           title: Center(child: Text('M A MAMUN'),) ,
-          subtitle: Center(child: Text('View Your Profile')) ,
+          subtitle: Center(child: Text('View Your Profile'),) ,
         ),
         FloatingActionButton.extended(
           label: const Text('Edit Profile'), // <-- Text
@@ -70,8 +70,8 @@ class ProfileUI extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(title, style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w500,
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
               color: Colors.grey[600]
             )),
             const Icon(Icons.arrow_forward_ios, color: Colors.grey,)
